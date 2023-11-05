@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\harmadik-backend-app.props" />
+</Project>
