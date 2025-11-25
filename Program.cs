@@ -19,13 +19,8 @@ var app = builder.Build();
 
 // CORS bekapcsolása
 app.UseCors("AllowAll");
-
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
+app.UseSwagger();
+app.UseSwaggerUI();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
